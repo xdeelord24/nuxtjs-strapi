@@ -33,6 +33,7 @@ export default {
     mounted() {},
     methods: {
         async performLogin() {
+            this.loadingTrue();
             try {
                 // Perform the login
                 const res = await this.$auth.loginWith("local", {
@@ -42,9 +43,7 @@ export default {
                     },
                 });
                 this.showAlertSuccess("Success");
-                if (!res) {
-                    throw new Error("Login failed. No response received.");
-                }
+                this.loadingFalse();
             } catch (error) {
                 this.showAlertSuccess(`${error}`);
             }

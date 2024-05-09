@@ -30,19 +30,26 @@ export default {
       });
     },
     async performLogout() {
+      this.loadingTrue();
+      try {
+        setTimeout(async () => {
+          this.loadingFalse();
+          await this.$auth.logout();
+          this.$store.dispatch("user/resetState");
+        }, 500);
+      } catch (e) {}
+    },
+    loadingTrue() {
       // Show loading SweetAlert
       this.$swal.fire({
         title: "Loading",
         allowOutsideClick: false,
       });
-      try {
-        this.$swal.showLoading();
-        setTimeout(async () => {
-          this.$swal.close();
-          await this.$auth.logout();
-          this.$store.dispatch("user/resetState");
-        }, 500);
-      } catch (e) {}
+      this.$swal.showLoading();
+    },
+    loadingFalse() {
+      // close loading SweetAlert
+      this.$swal.close();
     },
   },
 };
