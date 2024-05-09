@@ -14,6 +14,7 @@
             <v-card-actions>
                 <v-spacer />
                 <v-btn color="primary" nuxt @click="performLogin"> Login </v-btn>
+                <v-btn color="primary" nuxt @click="performLogout"> Logout </v-btn>
             </v-card-actions>
         </v-card>
     </v-col>
@@ -40,7 +41,7 @@ export default {
                         password: this.password,
                     },
                 });
-                this.showAlertSuccess("Login");
+                this.showAlertSuccess("Success");
                 if (!res) {
                     throw new Error("Login failed. No response received.");
                 }
