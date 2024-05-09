@@ -41,3 +41,10 @@ yarn add @nuxtjs/axios
     ```
         modules: ["@nuxtjs/axios"],
     ```
+##### Run the nuxtjs app as development
+```yarn dev```
+##### Run the nuxtjs app as development
+```
+yarn generate
+yarn start
+```
