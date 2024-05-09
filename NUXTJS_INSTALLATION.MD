@@ -1,9 +1,9 @@
 #### Requirements:
 - vue-format (vscode)
 - npm/yarn
-- add vue-sweetalert2 (add new folder for plugins)
-- add @nuxtjs/axios (add new folder for plugins)
-- add @nuxtjs/auth-next (add new folder for plugins)
+- add vue-sweetalert2 (for plugins)
+- add @nuxtjs/axios (for modules)
+- add @nuxtjs/auth-next (for modules)
 
 ##### Install Nuxtjs
 ```yarn create nuxt-app <project-name>```
@@ -24,11 +24,20 @@ create-nuxt-app v5.0.0
 ? Deployment target: Server (Node.js hosting)
 ```
 
-##### Install vue-sweetalert2
+##### Install vue-sweetalert2 on plugins
 ```
 yarn add vue-sweetalert2
 ```
 - add plugins on nuxt.config.js as 
     ```
         plugins: [{ src: "~/plugins/sweetalert2.js", ssr: false }],
+    ```
+
+##### Install @nuxtjs/axios on modules
+```
+yarn add @nuxtjs/axios
+```
+- add plugins on nuxt.config.js as 
+    ```
+        modules: ["@nuxtjs/axios"],
     ```
