@@ -29,5 +29,20 @@ export default {
         confirmButtonText: "Ok",
       });
     },
+    async performLogout() {
+      // Show loading SweetAlert
+      this.$swal.fire({
+        title: "Loading",
+        allowOutsideClick: false,
+      });
+      try {
+        this.$swal.showLoading();
+        setTimeout(async () => {
+          this.$swal.close();
+          await this.$auth.logout();
+          this.$store.dispatch("user/resetState");
+        }, 500);
+      } catch (e) {}
+    },
   },
 };
