@@ -40,10 +40,6 @@ export default {
     },
 
     async importData() {
-      if (!this.file) {
-        this.showAlertWarning("Please select a file first.");
-        return;
-      }
 
       this.loadingTrue();
 
@@ -54,6 +50,7 @@ export default {
           header: true,
           skipEmptyLines: true,
         });
+        let response = "";
         try {
           for (let data of parsedData.data) {
             const formData = {
@@ -63,10 +60,10 @@ export default {
                 file: data["file"] || null,
               },
             };
-            await this.$store.dispatch("timeSeries/addData", formData);
+            response = await this.$store.dispatch("timeSeries/addData", formData);
             console.log(formData);
           }
-          this.showAlertSuccess("Import completed.");
+          this.showAlertSuccess(`Import completed. ${response.message}`);
         } catch (err) {
           this.showAlertWarning(`Error importing: ${err}`);
         } finally {
