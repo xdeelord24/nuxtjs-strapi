@@ -6,27 +6,27 @@
 - add @nuxtjs/auth-next (for modules)
 
 ##### Install Nuxtjs
-```yarn create nuxt-app <project-name>```
+`$ yarn create nuxt-app <project-name>`
 
 Nuxtjs Configuration
 ```
-create-nuxt-app v5.0.0
-✨  Generating Nuxt.js project in front-nuxt
-? Project name: frontend-template
-? Programming language: JavaScript
-? Package manager: Yarn
-? UI framework: Vuetify.js
-? Template engine: HTML
-? Nuxt.js modules: (Press <space> to select, <a> to toggle all, <i> to invert selection)
-? Linting tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
-? Testing framework: None
-? Rendering mode: Single Page App
-? Deployment target: Server (Node.js hosting)
+$ create-nuxt-app v5.0.0
+$ ✨  Generating Nuxt.js project in front-nuxt
+$ ? Project name: frontend-template
+$ ? Programming language: JavaScript
+$ ? Package manager: Yarn
+$ ? UI framework: Vuetify.js
+$ ? Template engine: HTML
+$ ? Nuxt.js modules: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+$ ? Linting tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+$ ? Testing framework: None
+$ ? Rendering mode: Single Page App
+$ ? Deployment target: Server (Node.js hosting)
 ```
 
 ##### Install vue-sweetalert2 on plugins
 ```
-yarn add vue-sweetalert2
+$ yarn add vue-sweetalert2
 ```
 - add plugins on nuxt.config.js as 
     ```
@@ -35,7 +35,7 @@ yarn add vue-sweetalert2
 
 ##### Install @nuxtjs/axios on modules
 ```
-yarn add @nuxtjs/axios
+$ yarn add @nuxtjs/axios
 ```
 - add plugins on nuxt.config.js as 
     ```
@@ -45,6 +45,6 @@ yarn add @nuxtjs/axios
 ```yarn dev```
 ##### Run the nuxtjs app as development
 ```
-yarn generate
-yarn start
+$ yarn generate
+$ yarn start
 ```

@@ -3,7 +3,7 @@
 - npm/yarn
 
 ##### Install Strapi
-```yarn create strapi-app <project-name> --quickstart```
+`$ yarn create strapi-app <project-name> --quickstart`
 
 The strapi application will automatically install its dependencies and requirements
 
@@ -31,9 +31,9 @@ JWT_SECRET=tobemodified
 ```
 The default database is Sqlite with a directory of `.tmp/data.db`
 ##### Run the strapi app as development
-```yarn develop```
+`$ yarn develop`
 ##### Run the strapi app as production
 ```
-yarn build
-yarn start
+$ yarn build
+$ yarn start
 ```
