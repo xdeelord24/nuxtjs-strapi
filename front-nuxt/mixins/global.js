@@ -7,11 +7,11 @@ export default {
   data() {
     return {
       // secretKey: "SECRETKEY",
-      // config: {
-      //   headers: {
-      //     Authorization: `${this.$auth.$storage._state["_token.local"]}`,
-      //   },
-      // },
+      config: {
+        headers: {
+          Authorization: `${this.$auth.$storage._state["_token.local"]}`,
+        },
+      },
     };
   },
   computed: {
