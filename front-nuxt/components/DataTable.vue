@@ -30,7 +30,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('timeSeries/fetchData');
-  }
+  },
 };
 </script>
 
