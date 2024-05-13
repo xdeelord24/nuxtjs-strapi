@@ -29,6 +29,37 @@ export default {
         confirmButtonText: "Ok",
       });
     },
+    showAlertWarning(data) {
+      this.$swal({
+        title: data,
+        icon: "warning",
+        timerProgressBar: true,
+        confirmButtonText: "Ok",
+        cancelButtonText: "Cancel",
+      });
+    },
+    async showAlertWarningWithFunction(data, settings = {}) {
+      try {
+        const defaultSettings = {
+          title: data,
+          icon: "warning",
+          html: "",
+          timerProgressBar: true,
+          confirmButtonText: "Ok",
+          cancelButtonText: "Cancel",
+          showCancelButton: true,
+        };
+        const finalSettings = Object.assign({}, defaultSettings, settings);
+        const result = await this.$swal(finalSettings);
+        if (result.isConfirmed && settings.onConfirm) {
+          settings.onConfirm();
+        } else if (result.isDismissed && settings.onCancel) {
+          settings.onCancel();
+        }
+      } catch (e) {
+        console.log(`Error showAlertWarningWithFunction: ${e}`);
+      }
+    },
     async performLogout() {
       this.loadingTrue();
       try {
