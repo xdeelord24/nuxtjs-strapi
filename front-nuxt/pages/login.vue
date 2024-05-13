@@ -46,7 +46,7 @@ export default {
                 this.showAlertSuccess("Success");
                 this.loadingFalse();
             } catch (error) {
-                this.showAlertSuccess(`${error}`);
+                this.showAlertWarning(`${error}`);
             }
         },
     },
