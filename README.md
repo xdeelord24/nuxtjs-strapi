@@ -27,10 +27,10 @@ You can create the following extra directories, some of which have special behav
 
 The assets directory contains your backend strapi such as sqlite database, configurations, api's etc.
 
-More information about the usage of this directory in [the documentation](https://docs.strapi.io/dev-docs/quick-start).
+More information about the usage of this directory in [strapi](https://docs.strapi.io/dev-docs/quick-start).
 
 ### `front-nuxt`
 
 The assets directory contains your frontend nuxtjs framework such as vuetify, axios, api calling, modules etc.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+More information about the usage of this directory in [nuxt2](https://nuxtjs.org/docs/2.x/directory-structure/assets) and [vuetify2](https://v2.vuetifyjs.com/en/).
