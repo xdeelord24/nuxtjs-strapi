@@ -28,7 +28,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "~/plugins/sweetalert2.js", ssr: false }],
+  plugins: [
+    { src: "~/plugins/sweetalert2.js", ssr: false },
+    { src: "~/plugins/strapi.js", mode: "client" },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

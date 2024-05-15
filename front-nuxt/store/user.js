@@ -21,8 +21,6 @@ export const mutations = {
   SET_ROLE: (state, data) => (state.role = data),
   SET_FACILITY: (state, data) => (state.facility = data),
   resetState(state) {
-    // Merge rather than replace so we don't lose observers
-    // https://github.com/vuejs/vuex/issues/1118
     Object.assign(state, getDefaultState());
   },
   getRole(state, data) {
