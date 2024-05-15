@@ -13,43 +13,41 @@
             <v-card-text>
                 <p>
                     Vuetify is a progressive Material Design component framework for
-                    Vue.js. It was designed to empower developers to create amazing
-                    applications.
+                    Vue.js. It aims to provide developers with the tools they need to create
+                    beautiful, high-quality applications effortlessly.
                 </p>
                 <p>
-                    For more information on Vuetify, check out the
+                    Explore more about Vuetify in the
                     <a href="https://vuetifyjs.com" target="_blank" rel="noopener noreferrer">
-                        documentation </a>.
+                        official documentation</a>.
                 </p>
                 <p>
-                    If you have questions, please join the official
+                    Join our vibrant community on
                     <a href="https://chat.vuetifyjs.com/" target="_blank" rel="noopener noreferrer" title="chat">
-                        discord </a>.
+                        Discord</a> if you have any questions.
                 </p>
                 <p>
-                    Find a bug? Report it on the github
+                    Encounter a bug? Help us improve by reporting it on our
                     <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" rel="noopener noreferrer" title="contribute">
-                        issue board </a>.
+                        GitHub issue board</a>.
                 </p>
                 <p>
-                    Thank you for developing with Vuetify and I look forward to bringing
-                    more exciting features in the future.
+                    Your contributions and feedback are what help us make Vuetify better. Thank you for choosing Vuetify!
                 </p>
                 <div class="text-xs-right">
                     <em><small>&mdash; John Leider</small></em>
                 </div>
                 <hr class="my-3" />
                 <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
-                    Nuxt Documentation
-                </a>
+                    Learn more about Nuxt</a>
                 <br />
                 <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer">
-                    Nuxt GitHub
-                </a>
+                    Contribute to Nuxt on GitHub</a>
             </v-card-text>
             <v-card-actions>
                 <v-spacer />
-                <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
+                <v-btn color="primary" nuxt to="/inspire">Get Started</v-btn>
+                <v-btn color="primary" nuxt to="/newPage">This is new page</v-btn>
             </v-card-actions>
         </v-card>
     </v-col>
@@ -59,5 +57,6 @@
 <script>
 export default {
     name: "IndexPage",
+    // layout: "template"
 };
 </script>

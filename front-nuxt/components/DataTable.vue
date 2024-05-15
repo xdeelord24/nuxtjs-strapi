@@ -26,10 +26,15 @@ export default {
     ...mapState({
       timeSeriesData: state => state.timeSeries.data.data,
       timeSeriesMeta: state => state.timeSeries.data.meta
-    })
+    }),
+    computedAddingNumber(){
+      return 1+1;
+    }
   },
   mounted() {
     this.$store.dispatch('timeSeries/fetchData');
+  },
+  methods: {
   },
 };
 </script>
